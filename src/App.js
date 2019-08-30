@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import * as api from './api';
+import AnimatedColor from './AnimatedColor.js';
 
 class App extends Component {
 
@@ -28,7 +29,7 @@ render() {
   return (
     this.state.loading?
     <div className="App">
-      <div style={{backgroundColor:fontcolor}}> yoyo </div>
+      <AnimatedColor color={fontcolor}/>
     </div>
     :
     <div className="App">
